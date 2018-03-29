@@ -14,9 +14,7 @@ class SourceEditorCommand: NSObject, XCSourceEditorCommand {
     let spellChecker = NSSpellChecker.shared
 
     let supportUTIs = [
-        "com.apple.dt.playground",
-        "public.swift-source",
-        "com.apple.dt.playgroundpage"]
+        "public.swift-source"]
 
     func perform(with invocation: XCSourceEditorCommandInvocation, completionHandler: @escaping (Error?) -> Void ) {
         // Implement your command here, invoking the completion handler when done. Pass it nil on success, and an NSError on failure.
